@@ -1,0 +1,414 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-color {
+    color: crimson;
+}
+
+.secondary-color {
+    color: #151515;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    padding: 12px 100px;
+    box-sizing: border-box;
+    z-index: 3;
+    transition: all 0.5s ease-out;
+    background-color: #000000;
+}
+
+nav.navbar.black {
+    background: #000000;
+    transition: all 0.5s ease-out;
+}
+
+nav.navbar .nav-logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 50px;
+    float: left;
+}
+
+nav.navbar ul.nav-link {
+    float: right;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav.navbar ul.nav-link li a {
+    padding: 12px 24px;
+    line-height: 50px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav.navbar ul.nav-link li a.active {
+    background: crimson;
+    color: #fff;
+    border-radius: 7px;
+}
+
+nav.navbar ul.nav-link li a.active:focus {
+    outline: none;
+}
+
+nav.navbar ul.nav-link li a.active:hover {
+    background: white;
+    color: #000000;
+    transition: all 0.5s ease-out;
+}
+
+nav.navbar ul.nav-link li a:hover {
+    color: #D44C61;
+    transition: all 0.5s ease-out;
+}
+
+header.header-container {
+    background: url(kaju.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+ul.sidebar {
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+ul.sidebar.show {
+    width: 100%;
+    transition: all 0.5s ease-out;
+}
+
+ul.sidebar .close {
+    float: right;
+    margin: 8px 24px;
+    color: crimson;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+ul.sidebar li {
+    clear: both;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: 5vh;
+}
+
+ul.sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 60px;
+    line-height: 4;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+ul.sidebar li a:hover {
+    color: crimson;
+}
+
+.header-content {
+    position: absolute;
+    padding: 140px 100px;
+    height: 100vh;
+    text-align: left;
+}
+
+.header-content h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.header-content a {
+    background: crimson;
+    color: #fff;
+    border-radius: 7px;
+    padding: 12px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header-content a:hover {
+    background: black;
+    transition: all 0.5s ease-out;
+}
+
+section.sec1 {
+    margin: 50px 100px;
+    display: grid;
+    grid-gap: 25px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title title title" "card1 card2 card3" "card4 card5 card6";
+    text-align: center;
+}
+
+section.sec1 .card1 h3,
+section.sec1 .card2 h3,
+section.sec1 .card3 h3,
+section.sec1 .card4 h3,
+section.sec1 .card5 h3,
+section.sec1 .card6 h3 {
+    color: crimson;
+    text-align: center;
+}
+
+section.sec1 .card1 p,
+section.sec1 .card2 p,
+section.sec1 .card3 p,
+section.sec1 .card4 p,
+section.sec1 .card5 p,
+section.sec1 .card6 p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #151515;
+}
+
+section.sec1 h1 {
+    grid-area: title;
+    text-align: center;
+    color: #151515;
+    font-size: 50px;
+}
+
+section.sec1 .card1 {
+    grid-area: card1;
+}
+
+section.sec1 .card2 {
+    grid-area: card2;
+}
+
+section.sec1 .card3 {
+    grid-area: card3;
+}
+
+section.sec1 .card4 {
+    grid-area: card4;
+}
+
+section.sec1 .card5 {
+    grid-area: card5;
+}
+
+section.sec1 .card6 {
+    grid-area: card6;
+}
+
+section.sec2 {
+    background: crimson;
+    text-align: center;
+    padding: 20px 100px 40px;
+}
+
+section.sec2 p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+section.sec2 a {
+    color: #fff;
+}
+
+section.sec2 a:hover {
+    color: black;
+}
+
+section.sec2 {
+    color: black;
+}
+
+section.sec2 .h3 {
+    font-size: 30px;
+}
+
+footer.footer-container {
+    background: #151515;
+    padding: 20px 100px;
+}
+
+footer.footer-container p {
+    color: #fff;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    ul.sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav.navbar {
+        padding: 12px 50px;
+        z-index: 1;
+    }
+    nav.navbar ul.nav-link {
+        display: none;
+    }
+    nav.navbar .menu-btn {
+        position: relative;
+        right: 15px;
+        top: 20px;
+        width: 20px;
+        float: right;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+    }
+    nav.navbar .menu-btn .btn-line {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        margin: 0 0 5px 0;
+    }
+    .header-content {
+        padding: 100px 50px;
+        text-align: center;
+    }
+    .header-content h1 {
+        font-size: 45px;
+    }
+    .header-content p {
+        font-size: 18px;
+    }
+    .header-content a {
+        font-size: 18px;
+    }
+    section.sec1 {
+        margin: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "title title" "card1 card2" "card3 card4" "card5 card6";
+    }
+    section.sec2 {
+        padding: 20px 50px 40px;
+    }
+    section.sec2 i {
+        font-size: 40px;
+    }
+    footer.footer-container {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.sec1 {
+        margin: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "title" "card1" "card2" "card3" "card4" "card5" "card6";
+    }
+    section.sec1 .card1 {
+        grid-area: card1;
+    }
+    section.sec1 .card2 {
+        grid-area: card2;
+    }
+    section.sec1 .card3 {
+        grid-area: card3;
+    }
+    section.sec1 .card4 {
+        grid-area: card4;
+    }
+    section.sec1 .card5 {
+        grid-area: card5;
+    }
+    section.sec1 .card6 {
+        grid-area: card6;
+    }
+    footer.footer-container p {
+        text-align: center;
+    }
+}
+
+.button {
+    border: none;
+    color: white;
+    background-color: crimson;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px 10px;
+    grid-column-gap: 0.1px;
+    text-align: center;
+}
+
+.grid-item {
+    font-size: 20px;
+    text-align: center;
+}
+
+.brand-logo img {
+    width: 200px;
+}
+
+.about h1 {
+    font-size: 50px;
+    color: crimson;
+    text-align: center;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content p {
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    max-width: 730px;
+    margin: 0 auto;
+    float: none;
+}

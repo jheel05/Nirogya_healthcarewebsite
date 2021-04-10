@@ -1,0 +1,311 @@
+@import "config";
+nav {
+    &.navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75px;
+        padding: 12px 100px;
+        box-sizing: border-box;
+        z-index: 3;
+        @include easeOut;
+        &.black {
+            background: $secondary-color;
+            @include easeOut;
+        }
+        & .nav-logo {
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            line-height: 50px;
+            float: left;
+        }
+        & ul.nav-link {
+            float: right;
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            & li a {
+                padding: 12px 24px;
+                line-height: 50px;
+                color: #fff;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-decoration: none;
+                &.active {
+                    background: $primary-color;
+                    color: #fff;
+                    border-radius: 7px;
+                }
+                &.active:focus {
+                    outline: none;
+                }
+                &.active:hover {
+                    background: lighten($primary-color, 12);
+                    color: #fff;
+                    @include easeOut;
+                }
+            }
+            & li a:hover {
+                color: $primary-color;
+                @include easeOut;
+            }
+        }
+    }
+}
+
+header.header-container {
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+ul.sidebar {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    overflow: hidden;
+    @include easeOut;
+    &.show {
+        width: 100%;
+        @include easeOut;
+    }
+    & .close {
+        float: right;
+        margin: 8px 24px;
+        color: #fff;
+        font-size: 40px;
+        cursor: pointer;
+        @include easeOut;
+    }
+    & li {
+        clear: both;
+        list-style: none;
+        text-align: center;
+        position: relative;
+        top: 5vh;
+    }
+    & li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 16px 60px;
+        line-height: 4;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        overflow: hidden;
+        @include easeOut;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.header-content {
+    position: absolute;
+    padding: 140px 100px;
+    height: 100vh;
+    text-align: left;
+    & h1 {
+        color: #fff;
+        font-size: 70px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    & p {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    & a {
+        background: $primary-color;
+        color: #fff;
+        border-radius: 7px;
+        padding: 12px 24px;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    & a:hover {
+        background: lighten($primary-color, 12);
+        @include easeOut;
+    }
+}
+
+section.sec1 {
+    margin: 50px 100px;
+    display: grid;
+    grid-gap: 25px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "title title title" "card1 card2 card3" "card4 card5 card6";
+    text-align: center;
+    & .card1,
+    & .card2,
+    & .card3,
+    & .card4,
+    & .card5,
+    & .card6 {
+        & h3 {
+            color: $primary-color;
+            text-align: center;
+        }
+        & p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            color: $secondary-color;
+        }
+    }
+    & h1 {
+        grid-area: title;
+        text-align: center;
+        color: $secondary-color;
+    }
+    & .card1 {
+        grid-area: card1;
+    }
+    & .card2 {
+        grid-area: card2;
+    }
+    & .card3 {
+        grid-area: card3;
+    }
+    & .card4 {
+        grid-area: card4;
+    }
+    & .card5 {
+        grid-area: card5;
+    }
+    & .card6 {
+        grid-area: card6;
+    }
+}
+
+section.sec2 {
+    background: $primary-color;
+    text-align: center;
+    padding: 20px 100px 40px;
+    & p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    & a {
+        color: #fff;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+footer.footer-container {
+    background: $secondary-color;
+    padding: 20px 100px;
+    & p {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    ul.sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        &.navbar {
+            padding: 12px 50px;
+            z-index: 1;
+            & ul.nav-link {
+                display: none;
+            }
+            & .menu-btn {
+                position: relative;
+                right: 15px;
+                top: 20px;
+                width: 20px;
+                float: right;
+                cursor: pointer;
+                @include easeOut;
+                & .btn-line {
+                    width: 100%;
+                    height: 2px;
+                    background: #fff;
+                    margin: 0 0 5px 0;
+                }
+            }
+        }
+    }
+    .header-content {
+        padding: 100px 50px;
+        text-align: center;
+        & h1 {
+            font-size: 45px;
+        }
+        & p {
+            font-size: 18px;
+        }
+        & a {
+            font-size: 18px;
+        }
+    }
+    section.sec1 {
+        margin: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "title title" "card1 card2" "card3 card4" "card5 card6";
+    }
+    section.sec2 {
+        padding: 20px 50px 40px;
+        & i {
+            font-size: 40px;
+        }
+    }
+    footer.footer-container {
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.sec1 {
+        margin: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "title" "card1" "card2" "card3" "card4" "card5" "card6";
+        & .card1 {
+            grid-area: card1;
+        }
+        & .card2 {
+            grid-area: card2;
+        }
+        & .card3 {
+            grid-area: card3;
+        }
+        & .card4 {
+            grid-area: card4;
+        }
+        & .card5 {
+            grid-area: card5;
+        }
+        & .card6 {
+            grid-area: card6;
+        }
+    }
+    footer.footer-container {
+        & p {
+            text-align: center;
+        }
+    }
+}

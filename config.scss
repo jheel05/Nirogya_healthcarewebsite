@@ -1,0 +1,21 @@
+$primary-color: crimson;
+$secondary-color: #151515;
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
