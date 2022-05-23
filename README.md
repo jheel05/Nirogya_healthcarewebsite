@@ -1,7 +1,7 @@
 # Nirogya_healthcarewebsite
 
 # Nirogya
-### This is A hackathon project by Team "Adyant"
+
 
 <p align="center">
 <img src="NIROGYA (1).png" width='350'>
@@ -17,6 +17,7 @@ The initiative of this website is to provide gynecological healthcare facilities
 ## Solution
 The need of the hour is to adopt the easiest strategy of prevention. Prevention means an early diagnosis and a timely and effective treatment. We have developed a website “NIROGYA”. The initiative of this website is to provide gynecological healthcare facilities and resolving fitness & mental health issues for every woman. We focus on female health issues that are neglected most of the time. Our target audience consists of women of all ages. 
 ## SERVICES 
+
 + Diagnosing PCOD & PCOS
 + Focusing on Women's Fitness
 + Healing Depression & Anxiety
