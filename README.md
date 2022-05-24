@@ -1,8 +1,6 @@
 # Nirogya_healthcarewebsite
 
 # Nirogya
-
-
 <p align="center">
 <img src="NIROGYA (1).png" width='350'>
 </p>
