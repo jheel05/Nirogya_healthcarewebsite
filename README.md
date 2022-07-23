@@ -25,3 +25,6 @@ The need of the hour is to adopt the easiest strategy of prevention. Prevention 
 + Spreading Hygiene's awareness
 + Community building 
 
+<p align="center">
+<img src="c (2).png" width='700'>
+</p>
