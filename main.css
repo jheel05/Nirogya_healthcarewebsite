@@ -267,6 +267,7 @@ section.sec2 .h3 {
 footer.footer-container {
     background: #151515;
     padding: 20px 100px;
+    text-align: center;
 }
 
 footer.footer-container p {
@@ -371,10 +372,12 @@ footer.footer-container p {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 18px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.571);
 }
 
 .button:hover {
-    background-color: black;
+    background-color: rgb(114, 112, 112);
 }
 
 .grid-container {

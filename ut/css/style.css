@@ -95,12 +95,15 @@ section {
     color: white;
     text-transform: uppercase;
     background: rgb(241, 23, 96);
-    border-radius: 4px;
-    padding: 10px 15px
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: 2px, 2px black;
+    border-color: rgb(241, 23, 96);
 }
 
 .rightside button:hover {
-    background: black;
+    background: white;
+    color: rgb(241, 23, 96);
 }
 
 
